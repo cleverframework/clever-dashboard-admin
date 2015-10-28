@@ -26,6 +26,10 @@ function isLogged(req, res, next) {
 // Exports
 module.exports = function(DashboardPackage, app, config) {
 
+  router.get('/dashboard', isLogged, (req, res, next) => {
+    res.redirect('/')
+  })
+
   router.get('/', isLogged, (req, res, next) => {
     // TODO: Change clever-core for auto passing res.locals to render
     res.send(DashboardPackage.render('dashboard', res.locals))

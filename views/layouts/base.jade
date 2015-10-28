@@ -11,7 +11,7 @@ html
       title Clever V1
     
     block css
-      link(rel='stylesheet', href='public/dashboard/index.css')
+      link(rel='stylesheet', href='public/dashboard-admin/index.css')
       
     block appendcss
     
@@ -20,7 +20,7 @@ html
       ul.title-area
         li.name
           h1
-            a(href='#')
+            a(href='/')
               | Clever V1
         li.toggle-topbar.menu-icon
           a(href='#')
@@ -29,7 +29,10 @@ html
         ul.left
           li.divider
           li
-            a(href='#') Users
+            a(href='/pages') Pages
+          li.divider
+          li
+            a(href='/users') Users
           li.divider
         ul.right
           li.divider
@@ -57,7 +60,7 @@ html
     block prejs
     
     block js
-      script(type='text/javascript', src='public/dashboard/index.js')
+      script(type='text/javascript', src='public/dashboard-admin/index.js')
     
     block appendjs
     

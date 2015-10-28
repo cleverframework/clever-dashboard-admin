@@ -9,7 +9,7 @@ var DashboardAdminPackage = new Package('dashboard-admin')
 // All CLEVER packages require registration
 DashboardAdminPackage
   .attach({
-    where: '/dashboard'
+    where: '/'
   })
   .routes(['app', 'config'])
   .models()
