@@ -14,7 +14,7 @@ const config = CleverCore.loadConfig()
 function isLogged(req, res, next) {
   // NB: we don't need a high security check
   // since this module don't handle any data.
-  // The check is done in the API that is exchange via the React components.
+  // The check is done in the API (called by the REDUX application).
   const jwt = req.cookies[config.auth.jwt.cookie]
   if (!jwt) return res.redirect('/auth')
 
